@@ -31,4 +31,3 @@ def main():
     root = tk.Tk()
     wheelchair(root)
     root.mainloop()
-main()

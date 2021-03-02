@@ -9,7 +9,6 @@ import socket
 import globalFunc as gf
 import threading
 import VoiceModule as vm
-import YOLONoseTeeth as ynt
 import imageBasedInteraction as ibi
 
 # soc=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
