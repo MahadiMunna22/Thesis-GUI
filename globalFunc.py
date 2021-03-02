@@ -6,7 +6,7 @@ import time
 import os
 import pyautogui as pg
 import global_var_of_ui as glui
-
+import wheelchairGui as wg
 
 
 def font_with_size(x):
@@ -290,10 +290,8 @@ def buttonImg(name):
     return ButtonImg  
 
 def close():
-    return glui.root.destroy
-
-def wheelchairmode():
-    return 0
+    glui.stopVoice = True
+    glui.root.destroy()
 
 def ButtonFrame():
     for x in glui.buttons:  # getting all the buttons individually and providing specific characteristics
@@ -315,11 +313,10 @@ def ButtonFrame():
 
 def closeButton(x, y):
     # Close button at the right-top corner of the screen which will close the window
-    close_btn = tk.Button(glui.root, text="   X   ", command=close(), fg="black", bg="red")
+    close_btn = tk.Button(glui.root, text="   X   ", command=lambda: close(), fg="black", bg="red")
     close_btn.place(x=x, y=y)
 
 def wheelChairBtn(x,y):
-    wheelchair_btn = tk.Button(glui.root, text="Wheelchair Mode Activate", command=wheelchairmode(), fg="white", bg="black")
+    wheelchair_btn = tk.Button(glui.root, text="Wheelchair Mode Activate",width=24, command=lambda: wg.wheelchair(glui.root), fg="white", bg="black")
     wheelchair_btn.place(x=x, y=y)
     wheelchair_btn['font'] = font_with_size(28)
-

@@ -4,7 +4,7 @@ from tkinter import *
 import time
 import os
 import pyautogui as pg
-# import tkinter.font as font
+
 ########## GLOBAL VARIABLES ##########
 l = 0 # Initial condition of light (0 = off, 1 = on)
 f = 0 # Initial condition of fan (0 = off, 1 = on)
@@ -24,7 +24,7 @@ frame2 = []
 tempFont = []
 callFamilyFont = []
 
-root=[]
+root=None
 
 # Creating a 1D array of all the buttons we have used
 buttons = [
@@ -46,3 +46,5 @@ endfocusKey = 10 # The focus button in bottom [Press up arrow at the first row]
 
 # tempFont = font.Font(family='Helvetica', size=40, weight='bold')
 # callFamilyFont = font.Font(family='Helvetica', size=20, weight='bold')
+
+stopVoice = False
