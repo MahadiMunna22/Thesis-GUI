@@ -1,4 +1,5 @@
 # Thesis-GUI
 Run GUI.py
 
-https://youtu.be/UCuKGcEyac0
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/UCuKGcEyac0/0.jpg)](https://www.youtube.com/watch?v=UCuKGcEyac0 "Thesis Final Video")
+
